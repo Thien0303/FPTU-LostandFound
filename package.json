@@ -1,0 +1,19 @@
+{
+  "name": "fptu_lost_and_found",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nguyen Huu Giau",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "bootstrap": "^4.0.0"
+  }
+}

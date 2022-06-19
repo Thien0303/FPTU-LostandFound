@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="navbar">
+                <button type="button" data-toggle="collapse" data-target="#Navbar">
+                    <img src="img/logo.png" height="30" width="41"></span>
+                </button>
+            </div>
+            <div class="search">
+                <div class="search-field">
+                    <div class="search-icon"></div>
+                    <input type="text" class="search-input" placeholder="Search">
+                </div>
+                <style>
+                    .checkbox-style {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 10px;
+                        cursor: pointer;
+                    }
+
+                    .checkbox-label {
+                        cursor: pointer;
+                    }
+
+                    .checkbox-style input {
+                        display: none;
+                    }
+
+                    .checkbox-box {
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px;
+                        padding: 5px;
+                        color: transparent;
+                        transition: all 0.2s linear;
+                    }
+
+                    .checkbox-input:checked+.checkbox-box {
+                        background-color: #6a5af9;
+                        border-color: #6a5af9;
+                        color: white;
+                    }
+                </style>
+                <label for="checkbox" class="checkbox-style">
+                    <input type="checkbox" name="evondev" id="checkbox" class="checkbox-input" />
+                    <div class="checkbox-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <label for="checkbox" class="checkbox-label">Please check me</label>
+                </label>
+                <button class="search-button">Search</button>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav container ml-10">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>
+                        About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

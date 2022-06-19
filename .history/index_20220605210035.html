@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/f2fda88f12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="navbar">
+                <button class="rounded-circle" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <img class="rounded-circle" src="img/logo.jpg" height="30" width="100%">
+                </button>
+                <span class="Nav-username">User name</span>
+            </div>
+            <div class="search col-md-4">
+                <div class="search-field">
+                    <div class="search-icon"></div>
+                    <input type="text" class="search-input" placeholder="Search">
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown-select">
+                        <span class="dropdown-value">Search by</span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 10px" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="dropdown-list">
+                        <div class="dropdown-item">Name</div>
+                        <div class="dropdown-item">Categories</div>
+                    </div>
+                </div>
+                <button class="search-button">Search</button>
+            </div>
+            <button data-toggle="modal" data-target="#loginModal" class="btn notification rounded-circle"><i
+                    class="fa-light fa-bell"></i></button>
+        </nav>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav container ml-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Personal Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./"><span class="fa fa-home fa-lg"></span>Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./"><span class="fa fa-info fa-lg"></span>
+                        Liked list</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Logout</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="tabs">
+        <div class="tab-item active">
+            Cần Tìm
+        </div>
+        <div class="tab-item">
+            Nhặt Được
+        </div>
+        <div class="tab-item">
+            Chia Sẻ Kinh nghiệm
+        </div>
+        <div class="line"></div>
+    </div>
+    <!-- tab content -->
+    <div class="tab-content ">
+        <div class="row tab-pane active">
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/nhanpham.png" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Nhân phẩm</p>
+                    <p>Thể loại: </p>
+                    <p>Name: Lê Minh Thiện</p>
+                    <font-awesome-icon icon="fa-solid fa-phone" />
+
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Niềm Tin</p>
+                    <p>Thể loại: </p>
+                    <p>Name:</p>
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: LIÊM SĨ</p>
+                    <p>Thể loại: </p>
+                    <p>Name:</p>
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Người Yêu</p>
+                    <p>Thể loại: </p>
+                    <p>Name: </p>
+                </div>
+            </div>
+        </div>
+        <div class="row tab-pane ">
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/nhanpham.png" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Nhân phẩm</p>
+                    <p>Thể loại: </p>
+                    <p>Name: Lê Minh Thiện</p>
+                    <font-awesome-icon icon="fa-solid fa-phone" />
+
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Niềm Tin</p>
+                    <p>Thể loại: </p>
+                    <p>Name:</p>
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Tuổi Thơ</p>
+                    <p>Thể loại: </p>
+                    <p>Name:</p>
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Người Yêu</p>
+                    <p>Thể loại: </p>
+                    <p>Name: </p>
+                </div>
+            </div>
+        </div>
+        <div class="row tab-pane ">
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/nhanpham.png" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Nhân phẩm</p>
+                    <p>Thể loại: </p>
+                    <p>Name: Lê Minh sThiện</p>
+                    <font-awesome-icon icon="fa-solid fa-phone" />
+
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Niềm Tin</p>
+                    <p>Thể loại: </p>
+                    <p>Name:</p>
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Tuổi Thơ</p>
+                    <p>Thể loại: </p>
+                    <p>Name:</p>
+                </div>
+            </div>
+            <div class="pane col-md-3">
+                <div class="pane-img">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="pane-content">
+                    <p>Product: Người Yêu</p>
+                    <p>Thể loại: </p>
+                    <p>Name: </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        Footer
+    </footer>
+    <!-- modal -->
+    <div id="postModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="font-strong text-white">Create post</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="reserveform" class=" col-sm-6 col-md-12 align-self-center">
+                        <div class="">
+                            <div class="card-body">
+                                <dl class="row">
+                                    <dd class="font-strong col-12 col-md-2">Number of Guests</dd>
+                                    <dd class="col-12 col-md-10">
+                                        <div class="form-check ">
+                                            <label class="form-check-inline" for="radio1">
+                                                <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                                    value="option1">1
+                                            </label>
+                                            <label class="form-check-inline" for="radio2">
+                                                <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                                    value="option2">2
+                                            </label>
+                                            <label class="form-check-inline" for="radio3">
+                                                <input type="radio" class="form-check-input" id="radio3" name="optradio"
+                                                    value="option3">3
+                                            </label>
+                                            <label class="form-check-inline" for="radio4">
+                                                <input type="radio" class="form-check-input" id="radio4" name="optradio"
+                                                    value="option1">4
+                                            </label>
+                                            <label class="form-check-inline" for="radio5">
+                                                <input type="radio" class="form-check-input" id="radio5" name="optradio"
+                                                    value="option2">5
+                                            </label>
+                                            <label class="form-check-inline" for="radio6">
+                                                <input type="radio" class="form-check-input" id="radio6" name="optradio"
+                                                    value="option3">6
+                                            </label>
+                                        </div>
+                                    </dd>
+
+                                    <dd class="font-strong col-12 col-md-2">Section</dd>
+                                    <dd class="col-12 col-md-10">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-danger active">
+                                                <input type="radio" name="options" id="option1" autocomplete="off"
+                                                    checked> Non-Smoking
+                                            </label>
+                                            <label class="btn btn-success">
+                                                <input type="radio" name="options" id="option2" autocomplete="off">
+                                                Smoking
+                                            </label>
+                                        </div>
+                                    </dd>
+                                    <dd class="font-strong col-12 col-md-2">Date and Time</dd>
+                                    <dd class="col-12 col-md-10">
+                                        <div class="form-group row">
+                                            <div class="col-12 col-md-6">
+                                                <input type="tel" class="form-control" id="areacode" name="areacode"
+                                                    placeholder="Date">
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <input type="tel" class="form-control" id="telnum" name="telnum"
+                                                    placeholder="Time">
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class=" offset-md-2 offset-2 col-12">
+                                                    <br>
+                                                    <button type="submit" data-dismiss="modal"
+                                                        class="font-strong btn btn-secondary">Cancel</button>
+                                                    <button type="submit"
+                                                        class="font-strong btn btn-primary">Reserve</button>
+
+                                                </div>
+                                            </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="js/mycode.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
